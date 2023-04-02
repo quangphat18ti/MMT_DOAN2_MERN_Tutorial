@@ -1,0 +1,82 @@
+POST http://localhost:5000/api/auth/register 
+Content-Type: application/json
+
+{
+      "username": "trucvy0506",
+    "password": "trucvy0506"
+}
+
+### 
+
+POST http://localhost:5000/api/auth/login 
+Content-Type: application/json
+
+{
+    "username": "trucvy0506",
+    "password": "trucvy0506"
+}
+
+###
+
+POST http://localhost:5000/api/post 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI4YzNjMTE4MjkyOWMwYjA3YTUxMGYiLCJpYXQiOjE2ODAzOTMxNTN9.J7xq11LAca4b-ZVo2OBx3Kp-kO_bdluwnIb2r76JJvo
+
+{
+    "title": "Learn ReactJS",
+    "description" : "ReactJS with F8",
+    "url": "fullstack.edu.vn/learning/reactjs"
+}
+
+###
+POST http://localhost:5000/api/post 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI4YzNjMTE4MjkyOWMwYjA3YTUxMGYiLCJpYXQiOjE2ODAzOTMxNTN9.J7xq11LAca4b-ZVo2OBx3Kp-kO_bdluwnIb2r76JJvo
+
+{
+    "title": "Learn JS Cơ bản",
+    "description" : "Javascript cơ bản with F8",
+    "url": "fullstack.edu.vn/learning/javascript-co-ban",
+    "status": "TO LEARN"
+}
+
+###
+POST http://localhost:5000/api/post 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI4ZTcwZWY4YTJjODY2ZGQyOGIzMmMiLCJpYXQiOjE2ODA0MDIyNTV9.v1xOnbXlanV3K9fuKxVRLmPPCQB4J6MrKmFhVQs-iNI
+
+{
+    "title": "HTML, CSS Pro"
+}
+
+
+###
+
+GET http://localhost:5000/api/post 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI4YzNjMTE4MjkyOWMwYjA3YTUxMGYiLCJpYXQiOjE2ODAzOTMxNTN9.J7xq11LAca4b-ZVo2OBx3Kp-kO_bdluwnIb2r76JJvo
+
+###
+PUT http://localhost:5000/api/post/6428e0ec502badcdfd4703bc 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI4YzNjMTE4MjkyOWMwYjA3YTUxMGYiLCJpYXQiOjE2ODAzOTMxNTN9.J7xq11LAca4b-ZVo2OBx3Kp-kO_bdluwnIb2r76JJvo
+Content-Type: application/json
+
+{
+    "title": "HTML, CSS Siêu cấp Vip Pro",
+    "discription": "Learn HTML, CSS Pro with F8",
+    "url": "https://fullstack.edu.vn/learning/html-css"
+}
+
+###
+PUT http://localhost:5000/api/post/6428e0ec502badcdfd4703bc 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI4YzNjMTE4MjkyOWMwYjA3YTUxMGYiLCJpYXQiOjE2ODAzOTMxNTN9.J7xq11LAca4b-ZVo2OBx3Kp-kO_bdluwnIb2r76JJvo
+Content-Type: application/json
+
+{
+    "title": "HTML, CSS Siêu cấp Vip Pro",
+    "discription": "Learn HTML, CSS Pro with F8",
+    "url": "https://fullstack.edu.vn/learning/html-css"
+}
+
+###
+DELETE http://localhost:5000/api/post/6428e725f8a2c866dd28b330
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI4ZTcwZWY4YTJjODY2ZGQyOGIzMmMiLCJpYXQiOjE2ODA0MDIxOTN9.wBm9FXtARyBIBNp52qgVjSgEvk8BUdPdbNk5uzvDq7E.eyJ1c2VySUQiOiI2NDI4YzNjMTE4MjkyOWMwYjA3YTUxMGYiLCJpYXQiOjE2ODAzOTMxNTN9.J7xq11LAca4b-ZVo2OBx3Kp-kO_bdluwnIb2r76JJvo
